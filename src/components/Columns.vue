@@ -102,7 +102,7 @@ export default {
     justify-content: center;
     align-items: center;
     margin: 10px 0;
-    padding: 0 10px;
+    padding: 0 10px 48px;
     cursor: move;
   }
 }

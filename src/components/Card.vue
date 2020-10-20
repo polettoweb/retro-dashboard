@@ -1,14 +1,23 @@
 <template>
   <div class="card__content">
     <p>{{ task.content }}</p>
-    <AddRemoveIcon :action="handleAction" color="#ccc" rotate absolute />
+    <AddRemoveIcon
+      :action="handleAction"
+      scope="Remove Card"
+      color="#ccc"
+      rotate
+      absolute
+    />
+    <Votes :votes="task.votes" :id="task.id" :column="column" />
   </div>
 </template>
 <script>
 import AddRemoveIcon from "./AddRemoveIcon";
+import Votes from "./Votes";
 export default {
   components: {
-    AddRemoveIcon
+    AddRemoveIcon,
+    Votes
   },
   props: {
     task: {

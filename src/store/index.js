@@ -49,13 +49,22 @@ export default new Vuex.Store({
       console.log(state.columns[column].tasks.length);
       state.columns[column].tasks.push({
         id: uuid.v4(),
-        content: content
+        content: content,
+        votes: 0
       });
     },
     removeCardFromColumns(state, { id, column }) {
       state.columns[column].tasks = state.columns[column].tasks.filter(
         task => task.id !== id
       );
+    },
+    commitVotes(state, { counter, id, column }) {
+      console.log(state.columns[column].tasks);
+      state.columns[column].tasks.map(task => {
+        if (task.id === id) {
+          task.votes = counter;
+        }
+      });
     }
   },
   actions: {},

@@ -10,7 +10,7 @@
       @click="openModal"
       @keyup.enter="openModal"
     >
-      <AddRemoveIcon :action="openModal" color="#4caf50" />
+      <AddRemoveIcon :action="openModal" scope="Open Modal" color="#4caf50" />
     </div>
   </div>
   <Modal v-else :closeModal="closeModal" :form="form" />

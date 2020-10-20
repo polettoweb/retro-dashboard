@@ -1,5 +1,11 @@
 <template>
-  <div :class="['action', { absolute: absolute }]" @click="action">
+  <div
+    :class="['action', { absolute: absolute }]"
+    @click="action"
+    role="button"
+    :title="scope"
+    :aria-label="scope"
+  >
     <svg
       xmlns="http://www.w3.org/2000/svg"
       height="48"
@@ -21,6 +27,10 @@ export default {
   props: {
     action: {
       type: Function,
+      required: true
+    },
+    scope: {
+      type: String,
       required: true
     },
     rotate: {

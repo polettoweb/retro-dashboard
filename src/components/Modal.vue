@@ -5,7 +5,12 @@
     data-cy="modalContainer"
   >
     <div class="new-card__content">
-      <AddRemoveIcon :action="cancelModal" rotate absolute />
+      <AddRemoveIcon
+        :action="cancelModal"
+        scope="Close Modal"
+        rotate
+        absolute
+      />
       <form name="AddNewCard" @submit.prevent="closeModal">
         <div class="new-card__form-group">
           <label for="content">Content</label>
@@ -13,6 +18,7 @@
             type="text"
             name="content"
             tabindex="0"
+            aria-label="Add your content here"
             data-cy="inputContent"
             placeholder="Add you content here"
             v-model="form.content"
@@ -25,6 +31,7 @@
           <select
             tabindex="0"
             name="column"
+            aria-label="Select Column"
             data-cy="selectColumn"
             v-model="form.column"
             required
