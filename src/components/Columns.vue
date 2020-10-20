@@ -94,12 +94,15 @@ export default {
 
 .card {
   &__container {
+    box-sizing: border-box;
     width: 100%;
-    height: 80px;
+    min-height: 80px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 0;
+    padding: 0 10px;
     cursor: move;
   }
 }

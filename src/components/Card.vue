@@ -41,7 +41,7 @@ export default {
       }
     }
     .action {
-      top: 50%;
+      top: 30px;
       right: 5px;
       transform: translate3d(0, -50%, 0);
       opacity: 0;
