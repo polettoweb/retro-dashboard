@@ -23,7 +23,6 @@
           :key="task.id"
           :task="task"
           :column="i"
-          class="card__container"
           :style="defineCardColor(column.color, 30)"
         />
       </draggable>
@@ -89,21 +88,10 @@ export default {
     display: flex;
     justify-content: center;
     text-transform: uppercase;
-  }
-}
 
-.card {
-  &__container {
-    box-sizing: border-box;
-    width: 100%;
-    min-height: 80px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 10px 0;
-    padding: 0 10px 48px;
-    cursor: move;
+    & + div {
+      min-height: 50vh;
+    }
   }
 }
 </style>

@@ -42,7 +42,17 @@ export default {
 <style lang="scss">
 .card {
   &__content {
+    box-sizing: border-box;
     position: relative;
+    width: 100%;
+    min-height: 80px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    padding: 0 10px 48px;
+    cursor: move;
 
     &:hover {
       .action {
