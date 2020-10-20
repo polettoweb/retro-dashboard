@@ -85,6 +85,10 @@ export default {
       left: 50%;
       z-index: 100;
       transform: translate3d(-50%, -50%, 0);
+
+      @media (max-width: 500px) {
+        width: 320px;
+      }
     }
   }
 
@@ -118,6 +122,11 @@ export default {
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
       margin-bottom: 30px;
 
+      @media (max-width: 500px) {
+        width: 280px;
+        margin: 0 auto 30px;
+      }
+
       &:focus {
         border: 1px solid black;
       }
@@ -134,6 +143,11 @@ export default {
     padding: 0;
     margin-top: 20px;
     cursor: pointer;
+
+    @media (max-width: 500px) {
+      width: 280px;
+      margin: 20px auto 0;
+    }
 
     &:hover {
       background: #e8eeef;

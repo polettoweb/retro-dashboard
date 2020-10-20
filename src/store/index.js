@@ -53,7 +53,7 @@ export default new Vuex.Store({
       });
     },
     removeCardFromColumns(state, { id, column }) {
-      state.columns[id].tasks = state.columns[column].tasks.filter(
+      state.columns[column].tasks = state.columns[column].tasks.filter(
         task => task.id !== id
       );
     }
