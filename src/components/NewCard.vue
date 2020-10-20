@@ -57,6 +57,10 @@ export default {
     position: absolute;
     top: 10px;
     right: 10px;
+
+    @media (max-width: 500px) {
+      position: fixed;
+    }
   }
 
   &__button {

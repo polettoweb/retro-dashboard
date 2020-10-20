@@ -69,6 +69,8 @@ export default {
 .columns {
   &__container {
     width: 100%;
+    min-width: 900px;
+    overflow: auto;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;

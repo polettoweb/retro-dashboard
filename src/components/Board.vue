@@ -26,13 +26,17 @@ export default {
   &__container {
     width: 100%;
     max-width: 1280px;
-    min-width: 900px;
     height: 100%;
     margin: 0 auto;
   }
 
   &__title {
     height: 60px;
+
+    @media (max-width: 500px) {
+      padding-top: 30px;
+      font-size: 18px;
+    }
   }
 }
 </style>

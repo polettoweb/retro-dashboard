@@ -86,6 +86,7 @@ export default {
       position: absolute;
       width: 480px;
       height: 480px;
+      background: white;
       box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
         0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.2);
       top: 50%;
@@ -128,6 +129,7 @@ export default {
       background-color: #e8eeef;
       box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
       margin-bottom: 30px;
+      color: #333333;
 
       @media (max-width: 500px) {
         width: 280px;
@@ -149,6 +151,7 @@ export default {
     text-transform: uppercase;
     padding: 0;
     margin-top: 20px;
+    color: #333333;
     cursor: pointer;
 
     @media (max-width: 500px) {
